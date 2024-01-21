@@ -1,0 +1,29 @@
+{
+  "name": "hermesdj/seat-locale-fr",
+  "description": "A small plugin used to patch locale files from other plugins",
+  "type": "seat-plugin",
+  "autoload": {
+    "psr-4": {
+      "Seat\\HermesDj\\Locale\\": "src/"
+    }
+  },
+  "require": {
+    "eveseat/services": "^5"
+  },
+  "authors": [
+    {
+      "name": "Jay's",
+      "email": "jays.gaming.contact@gmail.com"
+    }
+  ],
+  "license": "GPL-3.0-or-later",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Seat\\HermesDj\\Locale\\SeatLocaleServiceProvider"
+      ]
+    }
+  }
+}
